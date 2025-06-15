@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '@mantine/core/styles.css';
+@import '@mantine/notifications/styles.css';
+@import '@mantine/dates/styles.css';
+
+@import 'react-image-gallery/styles/scss/image-gallery.scss';
+
+@import '../fonts/stylesheet.css';
+
+@layer base {
+  section {
+    @apply mx-auto w-full px-6 sm:px-8 lg:px-0 md:max-w-3xl lg:max-w-screen-md xl:max-w-screen-lg mxl:max-w-[1280px] 2xl:max-w-[1380px] 3xl:max-w-[1536px];
+  }
+
+  // Headings
+  h1 {
+    @apply text-2xl xl:text-3xl mxl:text-4xl 2xl:text-[42px] 3xl:text-5xl;
+  }
+  h2 {
+    @apply text-lg xl:text-xl mxl:text-2xl 2xl:text-3xl 3xl:text-4xl;
+  }
+  h4 {
+    @apply text-base xl:text-lg mxl:text-xl 2xl:text-2xl 3xl:text-3xl;
+  }
+
+  // Paragraphs & Small Texts
+  p[aria-level='1'] {
+    @apply text-xs md:text-sm xl:text-base 2xl:text-lg 3xl:text-xl;
+  }
+  p[aria-level='3'] {
+    @apply text-sm xsm:text-base sm:text-lg lg:text-lg mxl:text-xl 3xl:text-2xl;
+  }
+  p[aria-level='4'],
+  span[aria-level='4'] {
+    @apply text-xs xsm:text-sm 3xl:text-base;
+  }
+  span[aria-level='3'] {
+    @apply text-sm sm:text-base lg:text-sm 3xl:text-base;
+  }
+
+  p[aria-level='5'] {
+    @apply text-2xs xsm:text-xs mxl:text-sm;
+  }
+}
+
+body {
+  @apply bg-white dark:bg-[#141415];
+  font-family: 'Inter', serif;
+}
