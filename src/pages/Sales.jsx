@@ -53,7 +53,13 @@ const Sales = () => {
                   src={thumb}
                   alt={`Thumbnail ${index + 1}`}
                   className="w-16 h-16 rounded-lg cursor-pointer border border-gray-400 hover:border-blue-500"
-                  onClick={() => setMainImage(thumb)}
+                  onClick={() => {
+                 if (typeof thumb === 'string' && thumb.startsWith('data:image') || thumb.endsWith('.png') || thumb.endsWith('.jpg') || thumb.endsWith('.jpeg')) {
+                 setMainImage(thumb);
+                 } else {
+                 console.warn('Invalid image source:', thumb);
+                }
+        }}
                 />
               ))}
             </div>
