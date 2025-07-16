@@ -1,4 +1,4 @@
-# 🎨 Art-Auction (Frontend)
+# 🎨 Art-Auction 
 
 An interactive **3D decentralized art bidding** frontend built with **React**, **Vite**, and **Tailwind CSS**. It provides users with a modern interface to browse, view, and bid on digital artworks in a Web3-powered manner.
 
